@@ -1,0 +1,53 @@
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    </head>
+<form action="/submit" method="post">
+   <label for="full name">Full Name:</label>
+   <input type="text" id="username" name="username" placeholder="Enter your Name" required>
+   <br><br>
+    <label for="email address">Email Address:</label>
+    <input type="email" id="Email" name="Email" placeholder="Enter your Email" required>
+    <br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter your Password" required minlength="5" maxlength="15">
+    <br><br>
+    <label for="Dropdown">Choose an option for feedback:</label>
+    <select id="Dropdown" name="Dropdown">
+    <option value="Good">Good</option>
+     <option value="Okay">Okay</option>
+    <option value="Bad">Bad</option>
+    </select>
+    <br><br>
+<fieldset>   
+    <legend>What's the best way to contact you?</legend>
+    <input type="radio" id="email" name="contact" value="email">
+    <label for="email">Email</label>
+    <input type="radio" id="phone" name="contact" value="phone">
+    <label for="phone">Phone</label>
+    <input type="radio" id="mail" name="contact" value="mail">
+    <label for="mail">Mail</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend>Additional Features of Interest</legend>
+    <label for="coding">
+       <input type="checkbox" id="design" name="interests" value="coding"> Coding
+    </label>
+    <label for="design">
+       <input type="checkbox" id="design" name="interests" value="design"> Design
+   </label>    
+</fieldset>
+<br>
+<label for="comments">Comments:</label>
+<textarea id="comments" name="comments" rows="1" cols="30" placeholder="Write your message here"></textarea>
+
+
+<br>
+    <br>
+   <input type="submit" value="Submit">
+</form>
+
